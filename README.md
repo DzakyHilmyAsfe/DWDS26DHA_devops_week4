@@ -9,9 +9,24 @@
 * Lalu kita akan mendaftar akun git baru menggunakan perintah `git config --global user.name "dzakyhilmyasfe"`
 `git config --global user.email dzakyhilmyasfe@gmail.com`
 
-* Setelah itu kita check menggunakan perintah `git --version`
-
 ![Screenshot from 2021-10-07 01-37-51](https://user-images.githubusercontent.com/90166624/136265776-7c05ce46-b51b-4df4-a159-ab6c1d2b26ac.png)
+
+* Selanjutnya kita akan membuat SSH keygen untuk menghubungkan git kita dengan github dengan menjalankan perintah `ssh-keygen`, masukkan nama file serta passphrase untuk membuat ssh keygen :
+
+![Screenshot from 2021-10-07 02-12-40](https://user-images.githubusercontent.com/90166624/136268271-81b40c26-912e-4a68-8f02-99a90fdadc7b.png)
+
+* Lalu kita buka file dari ssh keygen menggunakan `cat keygen.pub`, dan isi file tersebut kita copy.
+
+![Screenshot from 2021-10-07 02-22-52](https://user-images.githubusercontent.com/90166624/136269629-989eeb25-3733-4843-b9df-f2120d2a0884.png)
+
+* paste key baru tersebut pada alamat web https://github.com/settings/keys 
+
+![Screenshot from 2021-10-07 02-23-00](https://user-images.githubusercontent.com/90166624/136269650-932cae83-8b5a-403f-a971-686767c8a4a3.png)
+
+*   Setelah dimasukkan maka tampilannya akan menjadi seperti ini.
+
+![Screenshot from 2021-10-07 02-23-18](https://user-images.githubusercontent.com/90166624/136269665-f4b014fa-84e1-46aa-8af2-db2b35251560.png)
+
 
 ### Manipulasi Teks
 
