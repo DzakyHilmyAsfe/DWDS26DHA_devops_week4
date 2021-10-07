@@ -102,17 +102,38 @@ Berikut merupakan perintah untuk git branch :
 
 ![Screenshot from 2021-10-07 17-53-37](https://user-images.githubusercontent.com/90166624/136370985-f3a33198-d688-4f5f-9cb4-4982eb0e7477.png)
 
-
 ### Git Checkout
+
+Git checkout digunakan untuk berpindah branch.gunakan `git branch` untuk mengetahui kita berada di branch mana, setelah itu gunakan `git checkout` untuk merubah
+
+![Screenshot from 2021-10-07 17-58-40](https://user-images.githubusercontent.com/90166624/136371523-2969637a-5d9d-4a9b-abf0-871ef27cef0c.png)
 
 
 ### Git Push
 
+Git push berguna untuk meng upload data dari database lokal git kita ke data server github. Untuk melakukan git kita perlu men add dan men commit file terlebih dahulu.
 
+tahapnya adalah :
+
+* `git remote -v` digunakan untuk melihat remote dan repository yang telah di buat
+* `git add .`
+* `git commit -m "update data"`
+* `git push origin staging` digunakan untuk melakukan push data pada branch staging
+
+![Screenshot from 2021-10-07 20-41-06](https://user-images.githubusercontent.com/90166624/136396163-505f0876-b21f-455c-ae7a-7b0263b8edb4.png)
+
+![Screenshot from 2021-10-07 20-40-58](https://user-images.githubusercontent.com/90166624/136396195-dc8836ff-0f8c-42a1-812e-c633ea4cfd14.png)
 
 ### Git Pull
 
+Git pull digunakan untuk menarik kode dari database server git ke database lokal kita, berfungsi untuk menyamakan perubahan seperti update kode yang telah dilakukan oleh user lain.
 
+Perintahnya adalah
+
+* `git pull` digunakan untuk menarik semua data dari semua branch
+* `git pull origin staging` digunakan untuk  menarik semua data dari branch staging
+
+![Screenshot from 2021-10-07 20-47-59](https://user-images.githubusercontent.com/90166624/136397324-624fb964-469e-4493-951e-659cd57ce7db.png)
 
 **2. Less**
 
