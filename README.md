@@ -1,13 +1,15 @@
 # Dokumentasi Perintah
 
-### Git
+## Git
+
+### Instalasi dan Konfigurasi Git
 
 * Pertama kita akan menginstall git terlebih dahulu menggunakan perintah `sudo apt install git -y` dan setelah itu kita cek versi nya menggunakan perintah `git --version`
 
 ![Screenshot from 2021-10-07 01-37-14](https://user-images.githubusercontent.com/90166624/136264458-e9aec9cf-9b18-4777-b8ad-e317a23ba3a1.png)
 
 * Lalu kita akan mendaftar akun git baru menggunakan perintah `git config --global user.name "dzakyhilmyasfe"`
-`git config --global user.email dzakyhilmyasfe@gmail.com`
+`git config --global user.email dzakyhilmyasfe@gmail.com`. Untuk melihat pendaftaran berhasil atau tidak, kita verifikasi menggunakan perintah `git config --list`
 
 ![Screenshot from 2021-10-07 01-37-51](https://user-images.githubusercontent.com/90166624/136265776-7c05ce46-b51b-4df4-a159-ab6c1d2b26ac.png)
 
@@ -27,28 +29,54 @@
 
 ![Screenshot from 2021-10-07 02-23-18](https://user-images.githubusercontent.com/90166624/136269665-f4b014fa-84e1-46aa-8af2-db2b35251560.png)
 
+### Repository 
 
-### Manipulasi Teks
+Repository ini berfungsi sebagai direktori atau folder yang akan menyimpan perubahan pada git. Untuk membuat repository kita bisa menggunakan perintah `git init` atau `git init belajargit` agar git terbuat didalam direktori belajargit.
 
-**1. Cat**
+![Screenshot from 2021-10-07 14-59-53](https://user-images.githubusercontent.com/90166624/136343987-abd7893e-b05b-4dcf-9d44-59bcdca87d6e.png)
 
-Cat merupakan akronim dari concatenate, cat berfungsi untuk membuka isi file, membuat file baru,menggabungkan 2 file atau lebih, serta dapat mengonversi file menggunakan huruf besar atau kecil
+### .gitignore
 
-* contoh perintah membuka isi file :
+`.gitignore` merupakan file yang akan membuat file atau directory yang bila daftar namanya dimasukkan kedalam file .gitignore, maka file atau directory tersebut akan diabaikan oleh git ketika melakukan push/upload ke database git. Pada contoh yang penulis buat,penulis membuat 4 file baru, terdiri dari, .gitignore, file1, file2.html, dan file3. Penulis memasukkan 2 file ke .gitignore, yaitu file1 dan file2.html. Ketika di cek menggunakan perintah `git status` maka file1 dan file2.html tidak akan ada pada list, karena sudah di ignore.
 
-![Screenshot from 2021-10-01 01-24-00](https://user-images.githubusercontent.com/90166624/135512139-36bae2b7-9b3a-4049-a6f3-27db38e39523.png)
+![Screenshot from 2021-10-07 15-07-40](https://user-images.githubusercontent.com/90166624/136346264-888cbbde-7bf1-4a43-b8fb-2895518ca6c3.png)
 
-* contoh perintah membuat file baru :
+![Screenshot from 2021-10-07 15-10-32](https://user-images.githubusercontent.com/90166624/136346274-b691e2f8-17c2-4a8d-b0cc-a071a10bc7b4.png)
 
-![Screenshot from 2021-10-01 01-24-25](https://user-images.githubusercontent.com/90166624/135512226-c7e896e0-0d6f-4fd0-9e9e-e1ad5462994a.png)
+### Git Add dan Commit
 
-* contoh perintah menggabung 2 file :
+Terdapat 3 kondisi file dalam git, yang pertama adalah kondisi modified, artinya file suda di modifikasi tapi perubahan belum ditandai, lalu yang kedua adalah kondisi staged dimana file yang sudah di modifikasi akan ditandai perubahannya, perintah yang digunakan adalah `git add`, dan yang ketiga adalah kondisi commited yaitu kondisi ketika file yang sudah ditandai perubahannya disimpan dalam database git,perintah yang digunakan adalah `git commit`.
 
-![Screenshot from 2021-10-01 01-25-49](https://user-images.githubusercontent.com/90166624/135512250-9e8eb3b6-0073-417f-9cce-c869464b17c2.png)
+Ada 3 cara untuk menggunakan perintah git add :
 
-* contoh perintah mengonversi huruf pada file :
+* `git add namafile.ext` untuk menambahkan satu file yakni namafile.ext.
+* `git add *.ext` untuk menambahkan semua file dengan akhiran extension ".ext".
+* `git add .` untuk menambahkan semua file dari repository.
 
-![Screenshot from 2021-10-01 01-34-06](https://user-images.githubusercontent.com/90166624/135512278-d1206aed-d0fc-4376-aa5e-580acc4ebf0e.png)
+![Screenshot from 2021-10-07 16-25-57](https://user-images.githubusercontent.com/90166624/136357758-1a3177f0-d22c-4f23-a4f5-d383f68b6536.png)
+
+
+Untuk menjalankan perintah commit, kita menggunakan perintah `git commit -m "my first commit"`
+
+![Screenshot from 2021-10-07 16-27-34](https://user-images.githubusercontent.com/90166624/136358001-bf28fc6f-b211-4c1a-8b6f-80162ceb4c3d.png)
+
+### Git Remote
+
+
+
+### Git Branch
+
+
+
+### Git Checkout
+
+
+### Git Push
+
+
+
+### Git Pull
+
 
 
 **2. Less**
