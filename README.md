@@ -135,6 +135,62 @@ Perintahnya adalah
 
 ![Screenshot from 2021-10-07 20-47-59](https://user-images.githubusercontent.com/90166624/136397324-624fb964-469e-4493-951e-659cd57ce7db.png)
 
+### Git Merge
+
+Git merge digunakan untuk menggabungkan branch. Penulis merubah nama branch utama yaitu `main` menjadi `production` pada alamat browser https://github.com/DzakyHilmyAsfe/belajargit/settings/branches . Lalu mengubah branch utama pada lokal database dengan perintah :
+
+`git branch -m main production`
+
+`git fetch origin`
+
+`git branch -u origin/production production`
+
+`git remote set-head origin -a`
+
+![Screenshot from 2021-10-07 21-31-34](https://user-images.githubusercontent.com/90166624/136405828-aeead630-5188-4ff8-9a17-c28c6e0eb031.png)
+
+* Setelah itu penulis menambahkan branch baru bernama development dengan sebuah filedevelopment didalamnya
+
+![Screenshot from 2021-10-07 21-38-42](https://user-images.githubusercontent.com/90166624/136407286-b83f4030-539d-443e-b60f-bf0e4f86dc25.png)
+
+* Saat ini penulis memiliki 3 branch yaitu, production, staging, dan development yang memiliki file-file yang berbeda disetiap branch nya.
+
+![Screenshot from 2021-10-07 21-41-48](https://user-images.githubusercontent.com/90166624/136411311-e661068f-95b6-4ef5-a10d-9c12e1f0b237.png)
+
+* Branch production terdiri dari file :
+
+![Screenshot from 2021-10-07 21-42-14](https://user-images.githubusercontent.com/90166624/136411342-6abbecf6-b1ca-45ee-9121-5c2bb1513a5b.png)
+
+* Branch staging terdiri dari file :
+
+![Screenshot from 2021-10-07 21-43-11](https://user-images.githubusercontent.com/90166624/136411413-a31cb8c8-baa2-407b-9c0e-2193f54bb9c5.png)
+
+* Branch development terdiri dari file :
+
+![Screenshot from 2021-10-07 21-42-44](https://user-images.githubusercontent.com/90166624/136411441-fc537486-005f-447e-9662-47fedea01fa8.png)
+
+* Untuk melakukan merging atau penggabungan branch development ke staging, kita terlebih dahulu pindah ke branch staging menggunakan perintah `git checkout staging` lalu jalankan perintah `git merge development`
+
+![Screenshot from 2021-10-07 22-29-16](https://user-images.githubusercontent.com/90166624/136416859-a81b1e3e-67b0-4e85-8028-8ba047eeb7a9.png)
+
+![Screenshot from 2021-10-07 22-32-07](https://user-images.githubusercontent.com/90166624/136416879-e28ea948-0ab2-4268-b76b-f2345cf0c1e7.png)
+
+* Setelah itu kita push branch staging, dan kita check pada github. Dari screenshot diatas dapat kita lihat file dari branch development akan bergabung ke branch staging
+
+![Screenshot from 2021-10-07 22-35-19](https://user-images.githubusercontent.com/90166624/136417213-bef77733-aad5-43d3-b4a5-f94843d2c0c6.png)
+
+![Screenshot from 2021-10-07 22-35-53](https://user-images.githubusercontent.com/90166624/136417245-b513fe6f-dd30-4164-8085-14bd690de837.png)
+
+* Untuk melakukan merging branch staging ke production, kita akan melakukan hal yang sama seperti sebelumnya. Pindah ke branch production menggunakan perintah `git checkout production` lalu jalankan perintah `git merge staging`. Setelah itu kita push branch staging, dan kita check pada github. 
+
+![Screenshot from 2021-10-07 23-11-16](https://user-images.githubusercontent.com/90166624/136423267-9dba6369-fffc-4e9b-844d-c3ae6963001f.png)
+
+![Screenshot from 2021-10-07 23-11-34](https://user-images.githubusercontent.com/90166624/136423290-4eb744d4-6b14-4311-b390-77c285d77001.png)
+
+
+
+## Reverse Proxxy
+
 **2. Less**
 
 * Gunakan perintah less ini untuk memberikan penomoran baris pada file.
