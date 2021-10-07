@@ -89,6 +89,18 @@ Untuk menggunakan git remote kita akan menggunakan github, pertama tama kita har
 
 ### Git Branch
 
+Git Branch adalah perintah yang digunakan untuk membuat cabang baru, dengan adanya cabang ini, setiap anggota tim bisa melakukan pekerjaannya masing masing, tanpa mengganggu penulisan kode dari anggota lain, contohnya pada gambar pada branch pertama si A akan membuat fitur register dan si B akan membuat fitur upload.
+
+![image](https://user-images.githubusercontent.com/90166624/136368663-59ff71a3-d6db-4545-80b4-f2917a670bc1.png)
+
+Berikut merupakan perintah untuk git branch :
+
+* `git branch development` untuk membuat branch baru dengan nama development
+* `git branch -M main` untuk membuat branch baru dengan nama main
+* `git branch -a` untuk melihat list branch yang telah dibuat
+* `git branch -M main staging` untuk mengubah nama branch main menjadi staging 
+
+![Screenshot from 2021-10-07 17-53-37](https://user-images.githubusercontent.com/90166624/136370985-f3a33198-d688-4f5f-9cb4-4982eb0e7477.png)
 
 
 ### Git Checkout
