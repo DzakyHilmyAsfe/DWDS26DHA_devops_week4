@@ -62,6 +62,29 @@ Untuk menjalankan perintah commit, kita menggunakan perintah `git commit -m "my 
 
 ### Git Remote
 
+Untuk menggunakan git remote kita akan menggunakan github, pertama tama kita harus membuat akun github, lalu kita membuat repository baru.
+
+![Screenshot from 2021-10-07 16-36-20](https://user-images.githubusercontent.com/90166624/136359621-02aa241b-daad-45df-90c2-a6cf0c86a2b7.png)
+
+* Selanjutnya kita akan menjalankan perintah berikut untuk mem push atau mengupload repository yang telah kita buat.
+
+`git remote add origin https://github.com/DzakyHilmyAsfe/belajargit.git`
+`git branch -M main`
+`git push -u origin main`
+
+![Screenshot from 2021-10-07 16-59-02](https://user-images.githubusercontent.com/90166624/136365238-40015955-303e-48db-94ba-89441b7deaf7.png)
+
+* Karena untuk login nya kita memerlukan Personal Access Token, maka terlebih dahulu kita bikin PAT pada halaman web https://github.com/settings/tokens
+
+![Screenshot from 2021-10-07 17-00-10](https://user-images.githubusercontent.com/90166624/136365669-7f7f4bf6-943e-4298-987d-1ef4a0912d5c.png)
+
+![Screenshot from 2021-10-07 17-01-40](https://user-images.githubusercontent.com/90166624/136365690-441cf9e8-481d-4b34-bd71-db2cb47126ca.png)
+
+* Masukkan PAT sebagai password untuk mempush repository yang telah kita buat, maka hasilnya adalah :
+
+![Screenshot from 2021-10-07 17-01-51](https://user-images.githubusercontent.com/90166624/136365778-a7e908d9-d97f-43e9-91dd-8571b9c7aebe.png)
+
+![Screenshot from 2021-10-07 17-02-14](https://user-images.githubusercontent.com/90166624/136366106-ffa41ad3-c4cc-4489-b524-a0bbec5536be.png)
 
 
 ### Git Branch
