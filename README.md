@@ -104,7 +104,7 @@ Berikut merupakan perintah untuk git branch :
 
 ### Git Checkout
 
-Git checkout digunakan untuk berpindah branch.gunakan `git branch` untuk mengetahui kita berada di branch mana, setelah itu gunakan `git checkout` untuk merubah
+Git checkout digunakan untuk berpindah branch. gunakan `git branch` untuk mengetahui kita berada di branch mana, setelah itu gunakan `git checkout` untuk merubah branch.
 
 ![Screenshot from 2021-10-07 17-58-40](https://user-images.githubusercontent.com/90166624/136371523-2969637a-5d9d-4a9b-abf0-871ef27cef0c.png)
 
@@ -137,7 +137,11 @@ Perintahnya adalah
 
 ### Git Merge
 
-Git merge digunakan untuk menggabungkan branch. Penulis merubah nama branch utama yaitu `main` menjadi `production` pada alamat browser https://github.com/DzakyHilmyAsfe/belajargit/settings/branches . Lalu mengubah branch utama pada lokal database dengan perintah :
+Git merge digunakan untuk menggabungkan branch. Penulis merubah nama branch utama yaitu `main` menjadi `production` pada alamat browser https://github.com/DzakyHilmyAsfe/belajargit/settings/branches . 
+
+![Screenshot from 2021-10-11 01-50-35](https://user-images.githubusercontent.com/90166624/136709400-46bf01f9-df66-4a24-abd3-14f11f0a7bf7.png)
+
+Lalu mengubah branch utama pada lokal database dengan perintah :
 
 `git branch -m main production`
 
@@ -195,7 +199,7 @@ Reverse proxy digunakan untuk mengamankan server dari serangan malware, dengan m
 
 ![image](https://user-images.githubusercontent.com/90166624/136671978-4298f488-91c9-4a18-b94e-0c6433d2d16f.png)
 
-Untuk menggunakan reverse proxxy pada nginx, berikut langkah yang akan kita lakukan :
+Untuk menggunakan reverse proxy pada nginx, berikut langkah yang akan kita lakukan :
 
 * Install nginx menggunakan perintah `sudo apt install nginx` lalu jalankan dengan perintah `sudo systemctl enable nginx` agar nginx selalu berjalan di startup.
 * Pindah ke direktori nginx `cd /etc/nginx`
@@ -219,9 +223,28 @@ server {
 }
 ```
 
+![Screenshot from 2021-10-11 01-22-29](https://user-images.githubusercontent.com/90166624/136708483-5fad0c4f-0847-4cb3-99bc-b54a8b11c6f5.png)
+
 * Untuk local server kita perlu mengubah domain pada nginx pada file `sudo nano /etc/hosts`
+
+![Screenshot from 2021-10-10 02-57-55](https://user-images.githubusercontent.com/90166624/136708167-39bcc3c1-72a5-4417-850f-8a5e3787f30e.png)
+
+![Screenshot from 2021-10-10 02-58-18](https://user-images.githubusercontent.com/90166624/136708170-1bd389bf-89ee-42b7-a0d4-15171f5b5b56.png)
+
+* Jalankan terminal baru dan buat aplikasi nodejs seperti pada link berikut https://github.com/DzakyHilmyAsfe/DWDS26DHA_devops_week2. Dengan perbedaan setelah simbol slash "/" ditambah "aplikasi1"
+
+![Screenshot from 2021-10-10 02-59-32](https://user-images.githubusercontent.com/90166624/136708225-6d4cdb0e-edd6-45d8-b59a-7d33958fe4fc.png)
+
+
 * Lakukan tes konfigurasi nginx menggunakan `sudo nginx -t`
 * Jika tidak terdapat error maka kita bisa menerapkan konfigurasi menggunakan perintah `sudo systemctl restart nginx` atau `sudo systemctl reload nginx`
 
-* Ketika kita membuka alamat bla bla akan memunculkan bla bla
-* Jika kita membuka alamat nbla alb akan membuka aksjdksad
+![Screenshot from 2021-10-10 02-57-25](https://user-images.githubusercontent.com/90166624/136708150-f6d0eaaf-7a9f-42c8-a549-caaeb08f6254.png)
+
+* Ketika kita membuka alamat domainaplikasi.xyz akan keluar tampilan awal nginx.
+
+![Screenshot from 2021-10-10 03-01-18](https://user-images.githubusercontent.com/90166624/136708128-56f5f674-7b82-423d-a8b8-c4007e14c7cd.png)
+
+* Lalu jika kita membuka alamat domainaplikasi.xyz/aplikasi1 akan keluar tampilan aplikasi nodejs
+
+![Screenshot from 2021-10-10 02-28-52](https://user-images.githubusercontent.com/90166624/136708133-a7975779-2f4d-4a43-a55c-6fe86176b2b0.png)
